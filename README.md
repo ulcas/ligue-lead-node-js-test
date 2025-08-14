@@ -23,6 +23,7 @@
 
 ## Requisitos
 - Docker + Docker Compose
+- [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download)
 
 ## Funcionalidades
 - [ ] Cria, Atualiza e apaga um projeto e as tarefas/repositórios vinculados a ele (se houver)
@@ -34,11 +35,11 @@
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/ulcas/
+git clone https://github.com/ulcas/ligue-lead-node-js-test.git
 ```
 2. Acesse o diretório do projeto
 ```bash
-cd 
+cd ligue-lead-node-js-test
 ```
 3. Crie e suba o container do docker
 ```bash
@@ -60,6 +61,7 @@ Após instalar o projeto corretamente e executar as migrations, já deve ser pos
 Acesse a URL Base: http://localhost:3000/api e uma mensagem de boas-vindas deve aparecer:
 
 Se a mensagem acima apareceu, a sua API está pronta para uso :)
+Caso deseje, pode utilizar a [Collection do Postman](https://github.com/ulcas/ligue-lead-node-js-test/blob/main/ligue_lead_postman_collection.json).
 
 ### Segue abaixo um guia dos end-points disponiveis:
 ## Endpoints (base: http://localhost:3000/api)
