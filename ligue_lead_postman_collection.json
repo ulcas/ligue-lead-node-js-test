@@ -1,0 +1,225 @@
+{
+  "info": {
+    "_postman_id": "165dd843-8112-4e4b-ac03-d5ebab61a807",
+    "name": "ligue-lead-test",
+    "description": "Collection para gerenciamento de projetos e tarefas.\n\n## Rotas disponíveis\n\n### Projetos\n\n- **GET /projects**: Retorna todos os projetos.\n    \n- **GET /projects/:id**: Retorna um projeto específico.\n    \n- **POST /projects**: Cria um novo projeto.\n    \n    - Body JSON: `{ \"title\": \"Nome do Projeto\", \"description\": \"Descrição opcional\" }`\n        \n- **PUT /projects/:id**: Atualiza um projeto existente.\n    \n    - Body JSON: `{ \"title\": \"Nome atualizado\", \"description\": \"Descrição atualizada\" }`\n        \n- **DELETE /projects/:id**: Remove um projeto.\n    \n- **GET /projects/:id/github/:username**: Vincula um repositório GitHub ao projeto.\n    \n\n### Tarefas\n\n- **POST /projects/:projectId/tasks**: Cria uma tarefa em um projeto.\n    \n    - Body JSON: `{ \"title\": \"Título da Tarefa\", \"description\": \"Descrição opcional\", \"status\": \"pendente|em_andamento|concluido\" }`\n        \n- **PUT /tasks/:id**: Atualiza uma tarefa.\n    \n    - Body JSON: `{ \"status\": \"em_andamento\" }`\n        \n- **DELETE /tasks/:id**: Remove uma tarefa.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "9166484"
+  },
+  "item": [
+    {
+      "name": "Projetos",
+      "item": [
+        {
+          "name": "Tarefas",
+          "item": [
+            {
+              "name": "Cria uma tarefa",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": \"Tarefa\",\r\n    \"description\": \"Opcional\",\r\n    \"status\": \"pendente|em_andamento|concluido\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/projects/1/tasks"
+              },
+              "response": []
+            },
+            {
+              "name": "Atualiza uma tarefa",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "  { \r\n    \"status\": \"em_andamento\"\r\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/tasks/1"
+              },
+              "response": []
+            },
+            {
+              "name": "Deleta uma tarefa",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "  { \r\n    \"status\": \"em_andamento\"\r\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/tasks/1"
+              },
+              "response": []
+            },
+            {
+              "name": "Deleta uma tarefa",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "  { \r\n    \"status\": \"em_andamento\"\r\n  }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/tasks/1"
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Consulta os projetos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/projects"
+          },
+          "response": []
+        },
+        {
+          "name": "Consulta um projeto",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/projects/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Cria um projeto",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"Meu Projeto\",\r\n    \"description\": \"Opcional\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/projects"
+          },
+          "response": []
+        },
+        {
+          "name": "Atualiza um projeto",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"Meu Projeto Atualizado\",\r\n    \"description\": \"Opcional Atualizado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/projects/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Atualiza um projeto",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"Meu Projeto Atualizado\",\r\n    \"description\": \"Opcional Atualizado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/projects/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Deleta um projeto",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{base_url}}/projects/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Vincula um repositório ao projeto",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  { \r\n    \"status\": \"em_andamento\"\r\n  }"
+            },
+            "url": "{{base_url}}/projects/1/github/ulcas"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Bem-vindo!",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url}}"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000/api"
+    }
+  ]
+}
