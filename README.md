@@ -101,7 +101,7 @@ Caso deseje, pode utilizar a [Collection do Postman](https://github.com/ulcas/li
 | POST    | /api/projects/{projectId}/tasks | body | Cria uma tarefa dentro de um projeto | `{ "title": "Tarefa 1", "description": "Opcional", "status": "pendente" }` |
 | PUT | /api/tasks/{id} | body       | Atualiza os dados de uma tarefa | `{ "title": "Nova Tarefa", "status": "em_andamento" }` |
 | DELETE  | /api/tasks/{id} | int        | Remove uma tarefa | - |
-| GET     | /api/projects/{id}/github/{username} | path:string | Busca os 5 últimos repositórios públicos de um usuário do GitHub e vincula ao projeto | - |
+| GET     | /api/projects/{id}/github/{username} | int:string | Busca os 5 últimos repositórios públicos de um usuário do GitHub e vincula ao projeto | - |
 
 **Observações sobre `status` de tarefas:**
 - Valores permitidos: `pendente`, `em_andamento`, `concluido`
