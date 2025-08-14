@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://liguelead.com.br/wp-content/uploads/2024/10/LOGO-LL-VERDE-E-CINZA.webp" alt="Descrição da imagem" width="400"/>
+  <img src="https://liguelead.com.br/wp-content/uploads/2024/05/LOGO-LL-VERDE-E-BRANCO-1024x331.png" alt="Descrição da imagem" width="400"/>
 </p>
 
 # Desafio Técnico — Node.js
