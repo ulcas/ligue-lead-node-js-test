@@ -37,9 +37,10 @@
 ```bash
 git clone https://github.com/ulcas/ligue-lead-node-js-test.git
 ```
-2. Acesse o diretório do projeto
+2. Acesse o diretório do projeto e crie o .env
 ```bash
 cd ligue-lead-node-js-test
+cp .env.example .env
 ```
 3. Crie e suba o container do docker
 ```bash
@@ -55,11 +56,7 @@ _normalmente as migrations são executadas no momento do build do container, rec
 ```bash
 docker exec -it ligue-lead-app npx sequelize-cli db:migrate
 ```
-4. Acesse o projeto e crie o .env baseado no .env.example
-```bash
-cd ligue-lead-node-js-test
-cp .env.example .env
-```
+
 ## Como usar
 Após instalar o projeto corretamente e executar as migrations, já deve ser possível acessar a API.
 
