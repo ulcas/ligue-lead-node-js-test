@@ -60,6 +60,7 @@ docker exec -it ligue-lead-app npx sequelize-cli db:migrate
 Após instalar o projeto corretamente e executar as migrations, já deve ser possível acessar a API.
 
 Acesse a URL Base: http://localhost:3000/api e uma mensagem de boas-vindas deve aparecer:
+<img width="1418" height="227" alt="image" src="https://github.com/user-attachments/assets/61d5c0f9-f1cf-4aa0-9136-d88b95aa7a08" />
 
 Se a mensagem acima apareceu, a sua API está pronta para uso :)
 Caso deseje, pode utilizar a [Collection do Postman](https://github.com/ulcas/ligue-lead-node-js-test/blob/main/ligue_lead_postman_collection.json).
