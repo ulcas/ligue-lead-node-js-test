@@ -1,5 +1,9 @@
 <p align="center">
   <img src="https://liguelead.com.br/wp-content/uploads/2024/05/LOGO-LL-VERDE-E-BRANCO-1024x331.png" alt="Descrição da imagem" width="400"/>
+  <br/>
+  <img src="https://img.shields.io/badge/Node.js-v18.20.8-brightgreen" alt="Node.js">
+  <img src="https://img.shields.io/badge/MySQL-8-blue" alt="MySQL">
+  <img src="https://img.shields.io/badge/npm-v10.8.2-red" alt="npm">
 </p>
 
 # Desafio Técnico — Node.js
