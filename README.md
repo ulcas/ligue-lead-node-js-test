@@ -113,8 +113,8 @@ Caso deseje, pode utilizar a [Collection do Postman](https://github.com/ulcas/li
 | ---------- | ------- |
 | **Subir containers** | `docker-compose up -d` |
 | **Derrubar containers** | `docker-compose down` |
-| **Ver logs do container app** | `docker logs -f nome_do_container` |
-| **Acessar container app** | `docker exec -it nome_do_container sh` |
+| **Ver logs do container app** | `docker logs -f ligue-lead-app` |
+| **Acessar container app** | `docker exec -it ligue-lead-app sh` |
 | **Rodar migrations** | `npx sequelize-cli db:migrate` |
-| **Rodar migrations no container** | `docker exec -it nome_do_container npx sequelize-cli db:migrate` |
+| **Rodar migrations no container** | `docker exec -it ligue-lead-app npx sequelize-cli db:migrate` |
 | **Reverter última migration** | `npx sequelize-cli db:migrate:undo` |
