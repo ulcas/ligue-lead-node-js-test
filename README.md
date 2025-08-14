@@ -50,6 +50,7 @@ docker compose up --build -d
 ***CERTIFIQUE-SE QUE NÃO HÁ NADA SENDO EXECUTADO NA PORTA 3000 E 3306***
 
 **3.5 (OPCIONAL).** Rodar migrations (Caso não tenha criado as tabelas)
+
 _normalmente as migrations são executadas no momento do build do container, recomendo validar no banco de dados se as tabelas já foram criadas_
 ```bash
 docker exec -it ligue-lead-app npx sequelize-cli db:migrate
